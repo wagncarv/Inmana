@@ -6,6 +6,6 @@ POST http://localhost:4000/api/restaurants HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Paulus",
-    "email": "novo@mail.com"
+    "name": "Popeye",
+    "email": "meumail@mail.com"
 }
