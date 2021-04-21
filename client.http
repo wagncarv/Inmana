@@ -8,23 +8,24 @@ POST http://localhost:4000/api/restaurants HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Guilherme",
-    "email": "guilherme@mail.com"
+    "name": "Comensal",
+    "email": "wagncarv@ucl.br"
 }
 
 
 ### SUPPLIES *************************************************************************
 # restaurant_id = "01255fe6-1ebd-46eb-b435-59626f17d82d"
-# restaurant_id = "c01e742e-7bc4-4c26-9dee-dbc8d19eb771"
+# restaurant_id = "c3c97906-292e-499a-882a-b56b1a8a92a4"
 # supply_id =  "49a1955c-6d3c-4801-8dbc-abb3b315b26e"
+# "e74ed8e4-c8a8-463d-8da0-5488c1fb85d7"
 POST http://localhost:4000/api/supplies HTTP/1.1
 content-type: application/json
 
 {   
-    "restaurant_id": "c01e742e-7bc4-4c26-9dee-dbc8d19eb771",
-    "description": "Requeijão Porto",
-    "responsible": "sara@gmail.com",
-    "expiration_date": "2021-04-13"
+    "restaurant_id": "e74ed8e4-c8a8-463d-8da0-5488c1fb85d7",
+    "description": "Doce de leite",
+    "responsible": "wagncarv@ucl.br",
+    "expiration_date": "2021-04-15"
 }
 
 ###
