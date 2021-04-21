@@ -1,11 +1,33 @@
-GET http://localhost:4000/api?name=banana&age=42 HTTP/1.1
+#GET http://localhost:4000/api?name=banana&age=42 HTTP/1.1
 
-###
+
+
+### RESTAURANTS *********************************************************************
 
 POST http://localhost:4000/api/restaurants HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Popeye",
-    "email": "meumail@mail.com"
+    "name": "Guilherme",
+    "email": "guilherme@mail.com"
 }
+
+
+### SUPPLIES *************************************************************************
+# restaurant_id = "01255fe6-1ebd-46eb-b435-59626f17d82d"
+# restaurant_id = "c01e742e-7bc4-4c26-9dee-dbc8d19eb771"
+# supply_id =  "49a1955c-6d3c-4801-8dbc-abb3b315b26e"
+POST http://localhost:4000/api/supplies HTTP/1.1
+content-type: application/json
+
+{   
+    "restaurant_id": "c01e742e-7bc4-4c26-9dee-dbc8d19eb771",
+    "description": "Requeijão Porto",
+    "responsible": "sara@gmail.com",
+    "expiration_date": "2021-04-13"
+}
+
+###
+GET http://localhost:4000/api/supplies/49a1955c-6d3c-4801-8dbc-abb3b315b25e HTTP/1.1
+
+# *************************************************************************
