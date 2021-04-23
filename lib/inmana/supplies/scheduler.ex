@@ -8,7 +8,10 @@ defmodule Inmana.Supplies.Scheduler do
     {:ok, state}
   end
 
-  def handle_info(msg, state) do
+  def handle_info(:generate, state) do
+    ExpirationNotification.send()
+
+    schedule_notification()
     {:noreply, state}
   end
 
