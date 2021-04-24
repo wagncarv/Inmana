@@ -5,9 +5,8 @@ defmodule Inmana.Supplies.Scheduler do
 
   # CLIENT
   def start_link(_state) do
-    GenServer.start_link(__MODULE__ , %{})
+    GenServer.start_link(__MODULE__, %{})
   end
-
 
   # SERVER
   @impl true
